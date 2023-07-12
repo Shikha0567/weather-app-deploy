@@ -5,12 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-//app.use(cors());
-app.use(
-  cors({
-    origin: 'https://weatherapp-netlify.netlify.app',
-  })
-);
+app.use(cors());
 
 // mongoose.connect('mongodb://localhost:27017/weatherApp', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect('mongodb+srv://dbuser:Abc%401234@cluster0.vlgbwew.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
