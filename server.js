@@ -38,4 +38,4 @@ app.get('/api/weather/:city', async (req, res) => {
   }
 });
 
-app.listen(5001, () => console.log('Server started on port 5001'));
+app.listen(process.env.PORT || 5001, () => console.log('Server started'));
